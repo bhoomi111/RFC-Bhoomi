@@ -19,6 +19,29 @@ Note:
 The central question of the project is not just whether larger models perform better, but whether **structured prompting improves structured clinical prediction**, and whether that improvement depends on **model capacity**.
 
 ---
+## Data Access
+
+This project uses the MIMIC-IV dataset, which is not included in this repository due to licensing and patient privacy restrictions.
+
+Data extraction was performed using Google BigQuery. To reproduce the data preparation stage, users must:
+
+1. obtain approved access to MIMIC-IV,
+2. configure Google Cloud / BigQuery credentials,
+3. update project and dataset identifiers in the extraction notebook,
+4. run `01_data_access_and_preparation.ipynb` to generate local artifacts.
+
+The repository only includes code, prompts, and result summaries — not raw clinical data.
+
+## LLM/SLM Inference Access
+
+Prompt-based experiments were run using an institute-hosted Ollama endpoint accessible only through the institute network / VPN.
+
+To reproduce these experiments, users must either:
+
+- use the same institute-hosted endpoint if authorized, or
+- run a compatible local Ollama instance and update the `OLLAMA_HOST` configuration.
+
+The repository includes the full prompting and evaluation pipeline, but access to the original hosted models is restricted.
 
 ## 1. Project Objective
 
