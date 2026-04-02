@@ -9,6 +9,12 @@ This repository contains an end-to-end project for **automated ICD code predicti
   - Direct prompting
   - Chain-of-Thought (CoT)
   - Multi-role prompting (Clinician -> Coder -> Auditor)
+ 
+Note:
+ - MIMIC-IV data is not included
+ - access requires credentialed approval
+ - data extraction was done through Google BigQuery
+ - LLM experiments were run using an institute-hosted Ollama endpoint accessible only through the institute network/VPN
 
 The central question of the project is not just whether larger models perform better, but whether **structured prompting improves structured clinical prediction**, and whether that improvement depends on **model capacity**.
 
