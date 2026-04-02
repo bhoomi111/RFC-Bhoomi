@@ -27,66 +27,37 @@ This is a challenging task because:
 
 ## 2. Repository Structure
 
-
+```
 ├── README.md
-| 
 ├── requirements.txt
-|
 ├── .gitignore
-|
 ├── notebooks/
-|
 │   ├── 01_data_preparation.ipynb
-|   |
 │   ├── 02_baselines.ipynb
-|   |
 │   └── 03_llm_slm_prompting.ipynb
-|
 ├── src/
-|
 │   ├── data_utils.py
-|   |
 │   ├── eval_utils.py
-|   |
 │   ├── prompt_utils.py
-|   |
 │   ├── ollama_utils.py
-|   |
 │   └── config.py
-|
 ├── artifacts/
-|
 │   ├── train_df.pkl
-|   |
 │   ├── val_df.pkl
-|   |
 │   ├── test_df.pkl
-|   |
 │   ├── mlb.pkl
-|   |
 │   ├── Y_train.pkl
-|   |
 │   ├── Y_val.pkl
-|   |
 │   ├── Y_test.pkl
-|   |
 │   └── label_list.pkl
-|
 ├── results/
-|
 │   ├── tfidf_results.csv
-|   |
 │   ├── direct_prompt_results.csv
-|   |
 │   ├── three_role_results.csv
-|   |
 │   └── cot_results.csv
-|   
 └── presentation/
-|   |
     └── final_presentation.pdf
-
-
+```
 ## 3. Environment Setup
 
 ### Option A: Google Colab
