@@ -27,7 +27,7 @@ This is a challenging task because:
 
 ## 2. Repository Structure
 
-.
+
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
