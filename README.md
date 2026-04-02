@@ -30,8 +30,11 @@ This is a challenging task because:
 
 ├── README.md
 ├── requirements.txt
+
 ├── .gitignore
+
 ├── notebooks/
+
 │   ├── 01_data_preparation.ipynb
 │   ├── 02_baselines.ipynb
 │   └── 03_llm_slm_prompting.ipynb
