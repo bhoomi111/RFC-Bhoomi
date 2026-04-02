@@ -28,7 +28,7 @@ Data extraction was performed using Google BigQuery. To reproduce the data prepa
 1. obtain approved access to MIMIC-IV,
 2. configure Google Cloud / BigQuery credentials,
 3. update project and dataset identifiers in the extraction notebook,
-4. run `01_data_access_and_preparation.ipynb` to generate local artifacts.
+4. run `01_data_preparation.ipynb` to generate local artifacts.
 
 The repository only includes code, prompts, and result summaries — not raw clinical data.
 
@@ -66,7 +66,7 @@ Recommended GitHub structure:
 ├── notebooks/
 │   ├── 01_data_preparation.ipynb
 │   ├── 02_baselines.ipynb
-│   └── 03_llm_slm_prompting.ipynb
+│   └── 03_LLMs.ipynb
 
 └── presentation/
     └── final_presentation.pdf
