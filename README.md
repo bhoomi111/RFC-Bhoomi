@@ -29,7 +29,7 @@ This is a challenging task because:
 
 
 ├── README.md
-|
+| 
 ├── requirements.txt
 |
 ├── .gitignore
