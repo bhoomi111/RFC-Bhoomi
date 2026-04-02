@@ -27,7 +27,10 @@ This is a challenging task because:
 
 ## 2. Repository Structure
 
-```
+Recommended GitHub structure:
+
+```text
+.
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
@@ -58,32 +61,43 @@ This is a challenging task because:
 └── presentation/
     └── final_presentation.pdf
 ```
+
+---
+
 ## 3. Environment Setup
 
 ### Option A: Google Colab
 
 Install the required dependencies:
 
+```python
 !pip install -q pandas numpy scikit-learn requests joblib tqdm
 !pip install -q transformers sentencepiece accelerate
 !pip install -q google-cloud-bigquery db-dtypes python-dotenv
+```
 
 If you are using Google Drive for persistence:
 
+```python
 from google.colab import drive
 drive.mount('/content/drive')
+```
 
 Then set your working directory, for example:
 
+```python
 import os
 BASE_DIR = '/content/drive/MyDrive/icd_project'
 os.makedirs(BASE_DIR, exist_ok=True)
-
+```
 
 ### Option B: Local setup
 
+```bash
 pip install -r requirements.txt
+```
 
+---
 
 ## 4. Data Pipeline Overview
 
@@ -136,6 +150,7 @@ Example models used during experimentation:
 - `deepseek-r1:7b`
 - `codellama:latest`
 
+---
 
 ## 6. Prompting Strategies
 
@@ -153,6 +168,7 @@ A structured workflow inspired by real coding practice:
 - **Coder**: maps diagnoses to ICD codes
 - **Auditor**: verifies whether predicted codes are supported by the text
 
+---
 
 ## 7. Evaluation Metrics
 
@@ -169,6 +185,7 @@ These allow comparison across:
 - chain-of-thought prompting,
 - and multi-role prompting.
 
+---
 
 ## 8. Main Findings
 
@@ -179,6 +196,7 @@ Current project findings:
 - Smaller models do not consistently benefit from more complex prompting.
 - Prompting effectiveness depends on model capacity.
 
+---
 
 ## 9. How to Run the Project
 
@@ -193,7 +211,8 @@ Run:
 Save results to the `results/` folder.
 
 ### C. Run prompt-based experiments
-Set Ollama host
+Set Ollama host:
+
 Then run:
 - direct prompting
 - CoT prompting
@@ -205,6 +224,8 @@ Save CSVs for each method, for example:
 - `cot_results.csv`
 - `three_role_results.csv`
 
+---
+
 
 ## 10. Limitations
 
@@ -213,6 +234,7 @@ Save CSVs for each method, for example:
 - SLMs may degrade with complex prompts.
 - Clinical coding remains difficult without label-constrained decoding or fine-tuning.
 
+---
 
 ## 11. Future Work
 
@@ -221,3 +243,5 @@ Save CSVs for each method, for example:
 - Hybrid LLM + classifier pipelines
 - Fine-tuning on clinical datasets
 - Adaptive prompting based on model capacity
+
+---
