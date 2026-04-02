@@ -1,0 +1,13 @@
+pandas
+numpy
+scikit-learn
+requests
+joblib
+tqdm
+transformers
+sentencepiece
+accelerate
+torch
+google-cloud-bigquery
+db-dtypes
+python-dotenv
